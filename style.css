@@ -14,6 +14,14 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #f2f1ef;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 25%;
+    padding-right: 25%;
+    box-sizing: border-box;
 }
 /* Header section */
 #header{
@@ -45,8 +53,11 @@ h2, #cpu, #player, p {
     margin-bottom: 2rem;
 
 }
-#player, #cpu {
-    margin: 0rem 5rem;
+#player{
+    margin-right: 2rem;
+    text-align: center;
+}
+#cpu {
     text-align: center;
 }
 #box_cpu, #box_player {
@@ -94,7 +105,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0rem 15rem 5rem 15rem;
+    margin-bottom: 5rem;
 }
 
 #Rock, #Paper, #Scissors {
@@ -165,7 +176,7 @@ button {
     top: 0;
     left: 0;
     height: 100%;
-    width: 105%;
+    width: 100%;
     background-color: rgba(0,0,0,0.5);
     color: #413f3d;
     z-index: 10;
@@ -219,8 +230,8 @@ button {
     .buttons {
         margin: 0rem 0rem 6rem 0rem;
     }
-    #player, #cpu {
-        margin: 0rem 2rem;
+    #player{
+        margin-right: 2rem;
     }
     h1 {
         font-size: 2rem;

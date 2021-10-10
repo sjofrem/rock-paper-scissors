@@ -212,6 +212,13 @@ button {
 /* Media Querie */
 
 @media (max-width: 550px){
+    #box_cpu, #box_player {
+        height: 110px;
+        width: 110px;
+    }
+    .buttons {
+        margin: 0rem 0rem 6rem 0rem;
+    }
     #player, #cpu {
         margin: 0rem 2rem;
     }
@@ -221,6 +228,8 @@ button {
     #Rock, #Paper, #Scissors {
         height: 120px;
         width: 120px;
+        padding: 10px;
+        margin: 0rem 1rem;
     }
     #Rock img, #Paper img, #Scissors img {
         height: 90px;

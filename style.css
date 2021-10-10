@@ -5,6 +5,10 @@
     margin: 0;
     padding: 0;
 }
+html {
+    position: relative;
+    min-height: 100%;
+}
 
 body {
     display: flex;
@@ -74,6 +78,17 @@ button {
     outline: none;
 }
 
+/*Selection section*/
+#Rock img, #Paper img, #Scissors img {
+    position:absolute;
+    height: 110px;
+    width: auto;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 
 .buttons {
     display: flex;
@@ -82,17 +97,15 @@ button {
     margin: 0rem 15rem 5rem 15rem;
 }
 
-/*Selection section*/
 #Rock, #Paper, #Scissors {
-    width: 180px;
-    height: 180px;
-    padding: 1rem;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    padding: 10px;
     border: 2px solid #413f3d;
     border-radius: 10px;
     margin: 10px;
     background-color: #f2f1ef;
-    background-size: cover;
-    background-position: center;
     flex-shrink: 0;
     margin: 0rem 1rem;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -151,8 +164,8 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    height: 200%;
-    width: 200%;
+    height: 100%;
+    width: 105%;
     background-color: rgba(0,0,0,0.5);
     color: #413f3d;
     z-index: 10;
@@ -194,4 +207,26 @@ button {
 
 #modal.active {
     display: block;
+}
+
+/* Media Querie */
+
+@media (max-width: 550px){
+    #player, #cpu {
+        margin: 0rem 2rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    #Rock, #Paper, #Scissors {
+        height: 120px;
+        width: 120px;
+    }
+    #Rock img, #Paper img, #Scissors img {
+        height: 90px;
+        width: auto;
+    }
+    #modal {
+        margin-left: -180px;
+    }
 }

@@ -28,7 +28,7 @@ body {
     flex: 1;
     text-align: center;
     padding: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     background-color: #413f3d;
 }
 h1 {
@@ -75,7 +75,7 @@ h2, #cpu, #player, p {
 #display {
     text-align: center;
     padding: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 
@@ -105,7 +105,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 9rem;
 }
 
 #Rock, #Paper, #Scissors {
@@ -134,13 +134,15 @@ button {
 
 /*Footer section*/
 #footer {
+    position: absolute;
     bottom: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
     gap: 1rem;
     width: 100%;
-    padding: 10px;
     font-size: 18px;
 }
 #github {

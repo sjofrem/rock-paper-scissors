@@ -1,3 +1,6 @@
+/* Import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Rakkas&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,23 +9,36 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: #5cdb95;
+    background-color: #f2f1ef;
 }
+/* Header section */
 #header{
     flex: 1;
-    background-color: #5cdb95;
     text-align: center;
     padding: 2rem;
     margin-bottom: 3rem;
+    background-color: #413f3d;
 }
-h1, h2, #cpu, #player, p {
-    color: #05386b;
+h1 {
+    color: #f2f1ef;
+    font-family: 'Rakkas', cursive;
+    font-size: 3rem;
 }
+/*Set fonts */
+
+#footerText {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2, #cpu, #player, p {
+    color: #413f3d;
+    font-family: 'Rakkas', cursive;
+}
+/*Plays section */
 #plays {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
-    background-color: #5cdb95;
 
 }
 #player, #cpu {
@@ -30,28 +46,23 @@ h1, h2, #cpu, #player, p {
     text-align: center;
 }
 #box_cpu, #box_player {
-    height: 180px;
-    width: 180px;
-    border: 5px solid #05386b;
+    height: 150px;
+    width: 150px;
+    border: 5px solid #413f3d;
+    padding: 22px;
     border-radius: 12px;
-    margin-bottom: 2rem;
+    margin-bottom: 12px;
     background-size: cover;
     background-position: center;
 }
 
-
+/*Results section*/
 #display {
     text-align: center;
     padding: 2rem;
     margin-bottom: 1rem;
 }
-#Points {
-    display: flex;
-    justify-content: space-around;
-    font-size:x-large;
-    font-weight: 800;
-    margin-bottom: 2rem;
-}
+
 
 
 button {
@@ -63,6 +74,7 @@ button {
     outline: none;
 }
 
+
 .buttons {
     display: flex;
     justify-content: center;
@@ -70,47 +82,115 @@ button {
     margin: 0rem 15rem 5rem 15rem;
 }
 
-#Rock {
-    background-image: url(./images/rock.png);
-}
-
-#Paper {
-    background-image: url(./images/paper.png);
-}
-
-#Scissors {
-    background-image: url(./images/scissors.png);
-}
+/*Selection section*/
 #Rock, #Paper, #Scissors {
     width: 180px;
     height: 180px;
-    border: 2px solid #05386b;
+    padding: 1rem;
+    border: 2px solid #413f3d;
     border-radius: 10px;
     margin: 10px;
-    background-color: #379683;
+    background-color: #f2f1ef;
     background-size: cover;
     background-position: center;
     flex-shrink: 0;
     margin: 0rem 1rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 #Rock:hover, #Paper:hover, #Scissors:hover {
     border: 2px solid #edf5e1;
-    background-color: #45b69f;
+    background-color: #b1a6a4;
     transform: scale(1.1);
 }
 #Rock:active, #Paper:active, #Scissors:active {
-    background-color: #4dc9b0;
+    background-color: #d8cfd0;
     transform: scale(1.1);
 }
 
+/*Footer section*/
 #footer {
-    position: absolute;
     bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
     width: 100%;
     padding: 10px;
     font-size: 18px;
+}
+#github {
+    height: 22px;
+    width: auto;
+}
+#github:hover {
+    transform: scale(1.1);
+}
+
+/*Modal section*/
+.btn-retry {
+    border-radius: 5px;
+    color: #f2f1ef;
+    background-color: #413f3d;
+    padding: 10px 20px;
+}
+
+.btn-retry:hover {
+    background-color: #b1a6a4;
+    transform: scale(1.1);
+}
+
+.btn-retry:active {
+    background-color: #d8cfd0;
+    transform: scale(1.1);
+}
+
+
+#overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: #413f3d;
+    z-index: 10;
+}
+
+#overlay.active {
+    display: block;
+}
+
+
+
+#modal {
+    width: 300px;
+    height: 200px;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    background-color: #f2f1ef;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 11;
+    display: none;
+    border: 4px solid #413f3d ;
+    padding: 2rem;
+}
+
+
+
+#endGameMsg {
+    font-size: x-large;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+
+
+#modal.active {
+    display: block;
 }

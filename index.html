@@ -12,27 +12,41 @@
     <div id="header">
         <h1>Rock Paper Scissors</h1>
     </div>
+
     <div id="plays">
         <div id="player">
-            <img id="box_player" src="">
+            <img id="box_player" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
             <p id="player_score">Player: 0</p>
         </div>
         <div id="cpu">
-            <img id="box_cpu" src="">
+            <img id="box_cpu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
             <p id="cpu_score">Computer: 0</p>
         </div>
     </div>
+
     <div id="display">
         <h2 id="results">First to 5 Wins!</h2>
     </div>
+
     <div class="buttons">
-        <button id="Rock"></button>
-        <button id="Paper"></button>
-        <button id="Scissors"></button>
+        <button id="Rock"> <img src="./images/rock.png" height="150px" width="auto"></button>
+        <button id="Paper"> <img src="./images/paper.png" height="150px" width="auto"></button>
+        <button id="Scissors"> <img src="./images/scissors.png" height="150px" width="auto"></button>
      </div>
+     
     <div id="footer">
-        <p>Copyright © 2021 sjofrem</p>
+        <p id="footerText">Copyright © 2021 sjofrem</p>
+        <a href="https://github.com/sjofrem"> 
+            <img id= "github" src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+        </a>
     </div>
+
+
+    <div id="modal">
+        <p id="endGameMsg"></p>
+        <button class="btn-retry">Try Again</button>
+    </div>
+    <div id="overlay"></div>
 
 </body>
 </html>

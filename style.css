@@ -256,3 +256,29 @@ button {
         width: auto;
     }
 }
+
+@media screen and (max-width: 400px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    h1{
+        margin: 0 auto;
+    }
+    #box_cpu, #box_player{
+        width: 80px;
+        height: auto;
+        margin: 0 auto
+    }
+    #Rock, #Paper, #Scissors {
+        height: 50px;
+        width: 50px;
+        margin: 0rem 1rem;
+    }
+    #Rock img, #Paper img, #Scissors img{
+        height: 30px;
+    }
+    #display{
+        margin: 0;
+    }
+}
